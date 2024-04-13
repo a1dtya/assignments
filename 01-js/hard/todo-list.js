@@ -11,6 +11,34 @@
 */
 
 class Todo {
+  constructor(){
+    this.todo = [];
+  }
+  add(todo){
+    this.todo.push(todo);
+
+  }
+  remove(indexOfTodo){
+    this.todo.splice(indexOfTodo,1);
+
+  }
+  update(index){
+   
+    this.todo[index] = updatedValue;
+
+  }
+  getAll(){
+    return this.todo;
+  }
+  get(index){
+    return this.todo[index];
+  }
+  clear(){
+    this.todo =[];
+  }
+// - getAll: returns all todos
+//     - get(indexOfTodo): returns todo at given index
+//     - clear: deletes all todos
 
 }
 
